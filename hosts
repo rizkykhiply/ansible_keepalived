@@ -1,0 +1,14 @@
+[keepalived]
+master ansible_host=XXX.XXX.XXX.XX1
+backup ansible_host=XXX.XXX.XXX.XX2
+vrrp ansible_host=XXX.XXX.XXX.XX3
+
+[master:vars]
+ansible_connection=ssh
+ansible_user=user
+ansible_ssh_pass=pppp123;21
+
+[backup:vars]
+ansible_connection=ssh
+ansible_user=user
+ansible_ssh_pass=pppp123;21
